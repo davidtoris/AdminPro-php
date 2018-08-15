@@ -15,17 +15,27 @@
     <link href="vistas/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="vistas/css/style.css" rel="stylesheet">
+    <!-- LOGIN CSS -->
+    <link href="vistas/css/pages/login-register-lock.css" rel="stylesheet">
     <!-- You can change the theme colors from here -->
     <link href="vistas/css/colors/default-dark.css" id="theme" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+    <![endif]-->
+
 </head>
 
 <body class="fix-header card-no-border fix-sidebar">
+
+    
+    
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->
@@ -40,7 +50,7 @@
     <!-- ============================================================== -->
     <div id="main-wrapper">
         
-        <?php 
+    <?php     
 
             include 'modulos/header.php';
             include 'modulos/aside.php';
@@ -66,7 +76,14 @@
             include 'modulos/footer.php'; 
 
 
-        ?>
+       
+            
+        // }else{
+        //     include 'modulos/login.php';
+        // }
+
+     ?>
+    
 
     
 
