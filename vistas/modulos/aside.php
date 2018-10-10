@@ -14,8 +14,18 @@
                                 <span class="label label-rouded label-themecolor pull-right">5</span>
                             </span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="categorias">Categorias</a></li>
-                                <li><a href="productos">Productos</a></li>
+                                <li><a href="usuarios">Usuarios</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expand="false"><i class="mdi mdi-gauge"></i>
+                            <span class="hide-menu">Web 
+                                <span class="label label-rouded label-themecolor pull-right">5</span>
+                            </span></a>
+                            <ul aria-expand="false" class="collapse">
+                                <li><a href="gomitas">gomitas</a></li>
+                                <li><a href="dasd">dasd</a></li>
                                 
                             </ul>
                         </li>

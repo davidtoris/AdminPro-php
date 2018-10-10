@@ -74,13 +74,9 @@
                                      
                                         <tbody>
 
-                                            <?php 
-                                        
-
-                                            $categorias = ControladorCategorias::ctrMostrarCategorias();
-                                            foreach ($categorias as $key => $value) {
+                                            
                                                 
-                                                echo '<tr>
+                                            
                                                 <td><span class="footable-toggle"></span>1</td>
                                                 
                                                 <td>genelia@gmail.com</td>
@@ -90,10 +86,10 @@
                                                 
                                                 
                                             </tr>';
-                                            }
+                                            
 
 
-                                            ?>
+                                            
                                             
                                             
                                         </tbody>

@@ -20,7 +20,9 @@
     <!-- You can change the theme colors from here -->
     <link href="vistas/css/colors/default-dark.css" id="theme" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="vistas/css/style.css" rel="stylesheet">
+
+    <link href="vistas/assets/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
     
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -59,7 +61,8 @@
             if (isset($_GET['ruta'])){
 
                 if ($_GET['ruta'] == 'inicio' ||
-                    $_GET['ruta'] == 'productos' ||
+                    $_GET['ruta'] == 'usuarios' ||
+                    $_GET['ruta'] == 'demo' ||
                     $_GET['ruta'] == 'categorias') {
 
                         include 'modulos/'.$_GET['ruta'].'.php';
@@ -106,6 +109,8 @@
     <script src="vistas/assets/plugins/sparkline/jquery.sparkline.min.js"></script>
     <!--Custom JavaScript -->
     <script src="vistas/js/custom.min.js"></script>
+    
+    
     
 
     <!-- This is data table -->
@@ -171,6 +176,12 @@
     <!-- Style switcher -->
     <!-- ============================================================== -->
     <script src="vistas/assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+    <script src="vistas/assets/plugins/sweetalert2/sweetalert2.all.js"></script>
+    <!-- Sweet-Alert  -->
+
+
+    <script src="vistas/javascript/usuarios.js"></script>
+    
 </body>
 
 </html>
