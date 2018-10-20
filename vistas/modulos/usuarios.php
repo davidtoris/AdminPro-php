@@ -34,27 +34,23 @@
 
         </button>
 
-      </div>
+  </div>
 
-      <div class="table-responsive m-t-40">
+  <div class="table-responsive m-t-40">
         
-        <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+    <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
 
-        <thead>
-         
+        <thead>   
          <tr>
-           
-           <th style="width:10px">#</th>
-           <th>Nombre</th>
+           <th>Nombre del alumno</th>
+           <th>Boleta</th>
            <th>Usuario</th>
-           
-           <th>Perfil</th>
+           <th>Contraseña</th>
+           <th>Grupo</th>
            <th>Estado</th>
            <th>Último login</th>
            <th>Acciones</th>
-
          </tr> 
-
         </thead>
 
         <tbody>
@@ -70,10 +66,11 @@
           echo ' 
           
           <tr>
-            <td>1</td>
-            <td>'.$value["nombre"].'</td>
-            <td>'.$value["usuario"].'</td>
             
+            <td>'.$value["nombre"].'</td>
+            <td>'.$value["foto"].' '.'<button class="btn btn-success btnVerBoleta" idUsuario="'.$value["id"].'"><i class="fa fa-bar-chart-o"></i></button></td>
+            <td>'.$value["usuario"].'</td>
+            <td>'.$value["password"].'</td>
             <td>'.$value["perfil"].'</td>';
 
             if($value["estado"] != 0){
@@ -200,19 +197,42 @@ MODAL AGREGAR USUARIO
 
                 <select class="form-control input-lg" name="nuevoPerfil">
                   
-                  <option value="">Selecionar perfil</option>
+                  <option value="">Selecionar grupo</option>
 
-                  <option value="Administrador">Administrador</option>
+                  <option value="preescolar1">Preescolar 1</option>
+                  <option value="preescolar2">Preescolar 2</option>
+                  <option value="preescolar3">Preescolar 3</option>
 
-                  <option value="Especial">Especial</option>
+                  <option value="primaria1">Primaria 1</option>
+                  <option value="primaria2">Primaria 2</option>
+                  <option value="primaria3">Primaria 3</option>
+                  <option value="primaria4">Primaria 4</option>
+                  <option value="primaria5">Primaria 5</option>
+                  <option value="primaria6">Primaria 6</option>
 
-                  <option value="Vendedor">Vendedor</option>
+                  
 
                 </select>
 
               </div>
 
             </div>
+
+
+            <!-- ENTRADA PARA SUBIR FOTO -->
+
+             <div class="form-group">
+              
+              <div class="panel">SUBIR BOLETA</div>
+
+              <input type="file" class="nuevaFoto" name="nuevaFoto">
+
+              <p class="help-block">PDF</p>
+
+              
+
+            </div>
+
 
             
 

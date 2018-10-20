@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -54,6 +58,8 @@
         
     <?php     
 
+if(isset($_SESSION["iniciarSesion"]) && $_SESSION["iniciarSesion"] == "ok"){
+
             include 'modulos/header.php';
             include 'modulos/aside.php';
         
@@ -63,6 +69,8 @@
                 if ($_GET['ruta'] == 'inicio' ||
                     $_GET['ruta'] == 'usuarios' ||
                     $_GET['ruta'] == 'demo' ||
+                    $_GET['ruta'] == 'salir' ||
+                    $_GET['ruta'] == 'calificaciones' ||
                     $_GET['ruta'] == 'categorias') {
 
                         include 'modulos/'.$_GET['ruta'].'.php';
@@ -79,7 +87,9 @@
             include 'modulos/footer.php'; 
 
 
-       
+    }else{
+        include "modulos/login.php";
+    }       
             
         // }else{
         //     include 'modulos/login.php';
